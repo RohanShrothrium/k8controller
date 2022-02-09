@@ -1,0 +1,16 @@
+domain: example.com
+layout:
+- go.kubebuilder.io/v3
+projectName: k8ex
+repo: k8ex
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: example.com
+  group: webapp
+  kind: Redis
+  path: k8ex/api/v1
+  version: v1
+version: "3"

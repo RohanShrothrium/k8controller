@@ -1,0 +1,8 @@
+apiVersion: webapp.example.com/v1
+kind: Redis
+metadata:
+  name: redis-sample
+spec:
+  followerReplicas: 5
+  LeaderImage: k8s.gcr.io/redis:e2e
+  FollowerImage: gcr.io/google_samples/gb-redisslave:v3
